@@ -8,6 +8,7 @@ interface useStyleableProps {
   allowFooterSorting: boolean
   stickyHeader: boolean
   height: string | number | undefined
+  [prop: string]: unknown
 }
 
 function getClasses (classes: TClassesOptions = []): string[] {
